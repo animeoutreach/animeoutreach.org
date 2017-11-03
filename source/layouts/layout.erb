@@ -10,6 +10,7 @@
 
     <%= stylesheet_link_tag 'header', 'site', 'footer', 'index', 'introduction' %>
     <%= javascript_include_tag 'site', 'classie'%>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <%= partial 'partials/introduction' %>
@@ -18,9 +19,16 @@
         <%= yield %>
     </div>
     <%= partial 'partials/footer' %>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
-
-  <!--Some scipts that runs after the page loads -->
-  <%= javascript_include_tag 'header' %>
-
 </html>
