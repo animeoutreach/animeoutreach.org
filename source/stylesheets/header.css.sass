@@ -1,0 +1,89 @@
+@import 'colors'
+
+.home-header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 10000
+  height: 230px
+  overflow: hidden
+  -webkit-transition: height 0.3s
+  -moz-transition: height 0.3s
+  transition: height 0.3s
+  .home-header-inner
+    margin: 0 auto
+  img, nav
+    display: inline-block
+    position: relative
+  img, nav a
+    line-height: 230px
+  img,
+    height: 200px
+    padding-left: 15px
+    padding-top: 15px
+    margin: 0
+    float: left
+  nav
+    float: right
+    padding-right: 15px
+    a
+      color: $alternate-accent-color
+      font-weight: 700
+      margin: 0 0 0 20px
+      font-size: 1.4em
+      &:hover
+        color: $primary-color
+  img, nav a
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    transition: all 0.3s
+  &.home-header-shrink
+    background: $accent-color
+    height: 60px
+    img, nav a
+      line-height: 60px
+      float: none
+    img,
+      height: 40px
+
+/* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header
+
+/* Transitions and class for reduced height
+
+/* Example Media Queries
+@media screen and (max-width: 55em)
+  .home-header
+    .home-header-inner
+      width: 100%
+    img, nav
+      display: block
+      margin: 0 auto
+      text-align: center
+      float: none
+    img
+      height: 90px
+      padding-top: 15px
+      line-height: 60px
+    nav
+      overflow: auto
+    nav a
+      line-height: 60px
+      margin: 0 10px
+    &.home-header-shrink
+      img, nav a
+        line-height: 25px
+      img
+        padding-top: 5px
+        height: 20px
+      nav a
+        font-size: 1em
+
+@media screen and (max-width: 32.25em)
+  .home-header nav a
+    font-size: 1em
+
+@media screen and (max-width: 24em)
+  .home-header
+    nav a, &.home-header-shrink nav a
+      line-height: 3

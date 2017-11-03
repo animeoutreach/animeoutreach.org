@@ -6,11 +6,20 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <title><%= current_page.data.title || 'Middleman' %></title>
+
+    <%= stylesheet_link_tag 'header', 'site', 'footer' %>
+    <%= javascript_include_tag 'site', 'classie'%>
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= partial 'partials/home_header' %>
+        <%= yield %>
+      <%= partial 'partials/footer' %>
+    </div>
   </body>
+
+  <!--Some scipts that runs after the page loads -->
+  <%= javascript_include_tag 'header' %>
+
 </html>
