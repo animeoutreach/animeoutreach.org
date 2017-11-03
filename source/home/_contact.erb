@@ -1,0 +1,17 @@
+<div class="row section-contact">
+  <div class="col-12">
+    <h1><%= current_page.data.contact_header %></h1>
+    <p><%= current_page.data.contact_desctiption%></p>
+  </div>
+  <div class="col-6">
+    <form method="POST" action="http://formspree.io/website_form@animeoutreach.org">
+      <input type="email" name="email" placeholder="Email | メールアドレス">
+      <textarea name="message" placeholder="Message | メッセージ"></textarea>
+      <div style="color: orange">reCAPTCHA is required | キャプチャのクリックをお願いします</div>
+      <button type="submit">Send | 送る</button>
+    </form>
+  </div>
+  <div class="col-6">
+    <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4dda49522fab566c8682e693eb737ffd.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+  </div>
+</div>

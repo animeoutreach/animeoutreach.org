@@ -111,6 +111,26 @@ button:hover{
   color: $primary-color;
 }
 
+input, textarea{
+  font-size: 1.2em;
+  border: 1px solid $dark-grey;
+  background: #fff;
+  padding: 0.9em;
+  transition: all 0.3s ease-in-out;
+  width: inherit;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+input {
+  line-height: normal;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  height: 10.3em;
+}
+
+
 .img img {
   background-size: contain;
   background-repeat: no-repeat;
