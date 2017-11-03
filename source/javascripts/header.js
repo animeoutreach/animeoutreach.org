@@ -30,7 +30,7 @@ var homeAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector( '.home-header' ),
 		didScroll = false,
-		changeHeaderOn = 150;
+		changeHeaderOn = 100;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {

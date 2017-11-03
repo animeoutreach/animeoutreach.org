@@ -28,7 +28,7 @@
     float: right
     padding-right: 15px
     a
-      color: $alternate-accent-color
+      color: $alternate-primary-color
       font-weight: 700
       margin: 0 0 0 20px
       font-size: 1.4em
@@ -39,12 +39,14 @@
     -moz-transition: all 0.3s
     transition: all 0.3s
   &.home-header-shrink
-    background: $accent-color
+    background: #333
     height: 60px
     img, nav a
       line-height: 60px
       float: none
     img,
+      padding-left: 10px
+      padding-top: 10px
       height: 40px
 
 /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header
@@ -66,6 +68,7 @@
       padding-top: 15px
       line-height: 60px
     nav
+      padding-right: 0px
       overflow: auto
     nav a
       line-height: 60px
@@ -77,7 +80,7 @@
         padding-top: 5px
         height: 20px
       nav a
-        font-size: 1em
+        font-size: .8em
 
 @media screen and (max-width: 32.25em)
   .home-header nav a

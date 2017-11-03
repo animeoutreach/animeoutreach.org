@@ -8,14 +8,17 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || 'Middleman' %></title>
 
-    <%= stylesheet_link_tag 'header', 'site', 'footer' %>
+    <%= stylesheet_link_tag 'header', 'site', 'footer', 'index' %>
     <%= javascript_include_tag 'site', 'classie'%>
   </head>
   <body>
-    <div class="container">
-      <%= partial 'partials/home_header' %>
-        <%= yield %>
-      <%= partial 'partials/footer' %>
+    <div class="jumbo-cover">
+      <img class="jumbo-cover-img" src= "<%= current_page.data.cover_image %>" />
+      <div class="container">
+        <%= partial 'partials/home_header' %>
+          <%= yield %>
+        <%= partial 'partials/footer' %>
+      </div>
     </div>
   </body>
 
