@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-12 section-about-us">
+    <h2><%= current_page.data.teams_header %></h2>
+  </div>
+  <% current_page.data.teams.each do |person| %>
+    <div class="col-4 center">
+      <div class="img center">
+        <img style="height:200px" src="<%= person[1]['icon']%>" />
+      </div>
+      <h3><%= person[1]['title'] %></h3>
+      <p><%= person[1]['role'] %></p>
+      <!--<%= person %>-->
+    </div>
+  <% end %>
+    <center><button>Join Us</button></center>
+</div>

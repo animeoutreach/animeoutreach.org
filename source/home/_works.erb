@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12" id="works">
+    <h1><%= current_page.data.works_header %></h1>
+  </div>
+  <div class="row">
+    <div class="col-5"><img alt="Anime Outreach" src="<%= current_page.data.works_jacket_image %>"></div>
+    <div class="col-7">
+      <dl class="spec-dl">
+        <dt><span class="spec-dl-label">TITLE</span></dt>
+        <dd><%= current_page.data.works_title %></dd>
+        <dt><span class="spec-dl-label">TEAM</span></dt>
+        <dd>
+          <%= current_page.data.works_team %>
+        </dd>
+        <dt><span class="spec-dl-label">SPECIFICATION</span></dt>
+        <dd><%= current_page.data.works_spec %></dd>
+        <dt><span class="spec-dl-label">RELEASE DATE</span></dt>
+        <dd><%= current_page.data.works_release_date %></dd>
+      </dl>
+    </div>
+  </div>
+</div>

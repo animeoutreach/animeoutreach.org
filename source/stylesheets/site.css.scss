@@ -91,9 +91,59 @@ p {
   display: none;
 }
 
-.img {
+button {
+  height: 48px;
+  width: 180px;
+  text-align: center;
+  color: $alternate-accent-color;
+  font-size: 1rem;
+  background: $dark-grey;
+  border: 1px solid $dark-grey;
+  border-radius: 4px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+button:hover{
+  background: #fff;
+  color: $primary-color;
+}
+
+.img img {
   background-size: contain;
   background-repeat: no-repeat;
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.spec-dl dd {
+    margin: 0;
+}
+
+.spec-dl dt {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: .5em;
+}
+
+.spec-dl span {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.spec-dl dt:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #ddd;
+    height: 1px;
+    display: block;
 }
 
 $width: 96%;
