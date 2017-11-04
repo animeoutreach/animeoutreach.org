@@ -8,7 +8,7 @@ collections:
     label: "Blog"
     folder: "source/blog/posts/"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.html"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" + ".html"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog_layout"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "blog"}
@@ -22,7 +22,7 @@ collections:
     label: "Page"
     folder: "source/page/pages/"
     create: true
-    slug: "{{slug}}.{html}"
+    slug: "{{slug}}" + ".html"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layout"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}

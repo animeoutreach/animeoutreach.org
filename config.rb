@@ -27,7 +27,7 @@ activate :blog do |blog|
   blog.name = "blog"
   blog.layout = "blog_layout"
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
-  blog.default_extension = ".md"
+  blog.default_extension = ".html.md"
 
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
