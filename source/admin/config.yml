@@ -34,6 +34,7 @@ collections:
     label: "Member"
     folder: "source/member"
     slug: "{{slug}}"
+    create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layout"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "member"}
