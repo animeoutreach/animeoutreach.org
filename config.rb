@@ -64,6 +64,15 @@ activate :blog do |blog|
   blog.default_extension = ".md"
 end
 
+activate :blog do |blog|
+  blog.prefix = "member"
+  blog.name = "member"
+  blog.layout = "layout"
+  blog.sources = "member/{title}"
+  blog.permalink = "{title}.html"
+  blog.default_extension = ".md"
+end
+
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 # configure :development do
