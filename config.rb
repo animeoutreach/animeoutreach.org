@@ -1,9 +1,6 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
-require 'rack'
-::Rack::Mime::MIME_TYPES[''] = 'text/html'
-
 # Per-page layout changes:
 #
 # With no layout
