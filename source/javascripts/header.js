@@ -32,14 +32,27 @@ var homeAnimatedHeader = (function() {
 		didScroll = false,
 		changeHeaderOn = 100;
 
+  var evalAdmin = document.getElementById('root');
+
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
+			if( !didScroll && !evalAdmin ) {
 				didScroll = true;
 				setTimeout( scrollPage, 250 );
 			}
 		}, false );
+    window.addEventListener('load', adminHomeHeaderRemover());
 	}
+
+  function adminHomeHeaderRemover(){
+    if (evalAdmin != null){
+      classie.add( header, 'home-header-shrink' );
+    }
+    else{
+      classie.remove( header, 'home-header-shrink' );
+    }
+  }
+
 
 	function scrollPage() {
 		var sy = scrollY();
