@@ -24,7 +24,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layout"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -36,7 +36,7 @@ collections:
     slug: "{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layout"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "member"}
       - {label: "Created Date", name: "date", widget: "datetime"}
       - {label: "Name", name: "title", widget: "string"}

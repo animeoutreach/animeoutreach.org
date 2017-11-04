@@ -1,15 +1,51 @@
 ---
-layout: "layout"
+layout: "page"
 blog: "member"
+title_header: Our Team
 directory_index: false
 ---
-<div class="col-12 center">
-  <% page_articles.each_with_index do |article, i| %>
-    <div class="col-3 img center">
-      <img style="height:200px" src="<%=article.data.thumbnail %>" />
+<div class="row">
+  <div class="col-12">
+    <h1><%= current_page.data.title_header %></h1>
+  </div>
+  <% page_articles[0...3].each_with_index do |article, i| %>
+    <div class="col-4 center">
+      <div class="img center">
+        <img style="height:200px" src="<%=article.data.thumbnail %>" />
+      </div>
+      <h3><%= link_to article.title, article %></h3>
+      <p><%= article.data.role %></p>
+      <!--<%= article.data %>-->
     </div>
-    <h3><%= link_to article.title, article %></h3>
-    <p><%= article.data.role %></p>
-    <!--<%= article.data %>-->
+  <% end %>
+  <% page_articles[3...6].each_with_index do |article, i| %>
+    <div class="col-4 center">
+      <div class="img center">
+        <img style="height:200px" src="<%=article.data.thumbnail %>" />
+      </div>
+      <h3><%= link_to article.title, article %></h3>
+      <p><%= article.data.role %></p>
+      <!--<%= article.data %>-->
+    </div>
+  <% end %>
+  <% page_articles[6...9].each_with_index do |article, i| %>
+    <div class="col-4 center">
+      <div class="img center">
+        <img style="height:200px" src="<%=article.data.thumbnail %>" />
+      </div>
+      <h3><%= link_to article.title, article %></h3>
+      <p><%= article.data.role %></p>
+      <!--<%= article.data %>-->
+    </div>
+  <% end %>
+  <% page_articles[9...12].each_with_index do |article, i| %>
+    <div class="col-4 center">
+      <div class="img center">
+        <img style="height:200px" src="<%=article.data.thumbnail %>" />
+      </div>
+      <h3><%= link_to article.title, article %></h3>
+      <p><%= article.data.role %></p>
+      <!--<%= article.data %>-->
+    </div>
   <% end %>
 </div>

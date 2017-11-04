@@ -3,6 +3,10 @@
 ###
 # Per-page layout changes:
 #
+
+require 'rack'
+::Rack::Mime::MIME_TYPES[''] = 'text/html'
+
 # With no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false

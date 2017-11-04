@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: page
 blog: page
 title: vision
 date: 2017-11-04T12:45:13.251Z
