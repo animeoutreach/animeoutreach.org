@@ -3,7 +3,7 @@ layout: layout
 blog: page
 title: vision
 date: 2017-11-04T12:45:13.251Z
-thumbnail: /images/uploads/Screen Shot 2017-10-31 at 14.34.42.png
+thumbnail: static/images/uploads/Screen Shot 2017-10-31 at 14.34.42.png
 ---
 # Vision
 
