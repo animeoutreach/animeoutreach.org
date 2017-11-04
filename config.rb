@@ -21,6 +21,8 @@ page '/*.txt', layout: false
 ###
 
 activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.name = "blog"
   blog.layout = "blog_layout"
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   blog.default_extension = ".md"
@@ -47,6 +49,15 @@ activate :blog do |blog|
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
+end
+
+activate :blog do |blog|
+  blog.prefix = "page"
+  blog.name = "page"
+  blog.layout = "layout"
+  blog.sources = "pages/{title}.html"
+  blog.permalink = "{title}.html"
+  blog.default_extension = ".md"
 end
 
 page "/feed.xml", layout: false
