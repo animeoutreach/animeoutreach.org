@@ -1,3 +1,12 @@
+function scrollToTop() {
+
+    if ($('.jumbo-cover').length != 0) {
+        $("html, body").animate({
+            scrollTop: $('.jumbo-cover').offset().top - 160
+        }, 1000);
+    }
+}
+
 function scrollToVision() {
 
     if ($('.section-vision').length != 0) {
@@ -6,6 +15,7 @@ function scrollToVision() {
         }, 1000);
     }
 }
+
 
 function scrollToAboutUs() {
 
