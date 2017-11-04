@@ -68,7 +68,7 @@ activate :blog do |blog|
   blog.prefix = "member"
   blog.name = "member"
   blog.layout = "layout"
-  blog.sources = "member/{title}"
+  blog.sources = "members/{title}"
   blog.permalink = "{title}.html"
   blog.default_extension = ".md"
 end
