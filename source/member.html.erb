@@ -3,13 +3,13 @@ layout: "layout"
 blog: "member"
 directory_index: false
 ---
-<% page_articles.each_with_index do |article, i| %>
-  <div class="col-4 center">
-    <div class="img center">
+<div class="col-12 center">
+  <% page_articles.each_with_index do |article, i| %>
+    <div class="col-3 img center">
       <img style="height:200px" src="<%=article.data.thumbnail %>" />
     </div>
     <h3><%= link_to article.title, article %></h3>
     <p><%= article.data.role %></p>
     <!--<%= article.data %>-->
-  </div>
-<% end %>
+  <% end %>
+</div>
