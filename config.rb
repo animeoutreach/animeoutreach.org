@@ -20,6 +20,8 @@ page '/*.txt', layout: false
 # Helpers
 ###
 
+activate :directory_indexes
+
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.name = "blog"
