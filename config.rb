@@ -1,6 +1,8 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
+require 'rack'
+::Rack::Mime::MIME_TYPES[''] = 'text/html'
 
 # Per-page layout changes:
 #
@@ -26,8 +28,8 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.name = "blog"
   blog.layout = "blog_layout"
-  blog.sources = "posts/{year}-{month}-{day}-{title}.html"
-  blog.default_extension = ".html.md"
+  blog.sources = "posts/{year}-{month}-{day}-{title}"
+  blog.default_extension = ".md"
 
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
@@ -57,7 +59,7 @@ activate :blog do |blog|
   blog.prefix = "page"
   blog.name = "page"
   blog.layout = "layout"
-  blog.sources = "pages/{title}.html"
+  blog.sources = "pages/{title}"
   blog.permalink = "{title}.html"
   blog.default_extension = ".md"
 end
