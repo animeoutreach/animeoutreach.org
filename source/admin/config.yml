@@ -22,6 +22,7 @@ collections:
     folder: "_page/pages/"
     create: true
     slug: "{{slug}}"
+    fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layout"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
