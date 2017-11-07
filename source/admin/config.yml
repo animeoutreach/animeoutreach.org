@@ -40,6 +40,8 @@ collections:
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "member"}
       - {label: "Created Date", name: "date", widget: "datetime"}
       - {label: "Name", name: "title", widget: "string"}
+      - {label: "Japanese Name", name: "japanese-title", widget: "string"}
+      - {label: "Choose English or Japanese Name", name: "name_la", widget: "select", options: ["english", "japanese"]}
       - {label: "Role", name: "role", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Personal Image", name: "thumbnail", widget: "image"}
