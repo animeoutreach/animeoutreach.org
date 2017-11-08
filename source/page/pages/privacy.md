@@ -1,6 +1,6 @@
 ---
-layout: blog_layout
-blog: blog
+layout: page
+blog: page
 title: privacy
 date: 2017-11-06T11:43:16.578Z
 thumbnail: /static/images/uploads/jikken4.jpg
