@@ -7,6 +7,7 @@ date: 2017-11-09T16:40:27.679Z
 thumbnail: /static/images/uploads/_render__03___kafuu_chino_by_mizumon-d9enaof.png
 ---
 ### Administrative Policy
+
 ## Non-Discrimination Policy
 
 Anime Outreach does not discriminate against person and users on the basis of race, biological gender, national or ethnic origin, color, age, or disability in the administration of policy and program.
