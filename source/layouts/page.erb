@@ -17,7 +17,28 @@
   <body>
     <div class="container" style="margin-top: 15em">
       <%= partial 'partials-page/home_header' %>
-        <%= yield %>
+      <% if current_page.data.blog == 'member'%>
+        <% if current_page.data.thumbnail.present? %>
+        <div class="row">
+          <div class="col-4">
+            <div class="img center">
+              <img style="width: 100%; height: 100%; margin-top: 40px;"src="http://dev.animeoutreach.org/<%=current_page.data.thumbnail %>" />
+              <p></p>
+              <i><%= current_page.data.description %></i>
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-7">
+            <h1><%= current_page.data.title %> | <%= current_page.data.japanese_title %></h1>
+            <h3><%= current_page.data.role %></h3>
+            <hr></hr>
+            <%= yield %>
+          </div>
+        </div>
+        <% else %>
+          <%= yield %>
+        <% end %>
+      <% end %>
     </div>
     <script>
       if (window.netlifyIdentity) {
