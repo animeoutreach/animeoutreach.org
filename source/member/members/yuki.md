@@ -3,7 +3,7 @@ layout: page
 blog: member
 date: 2017-11-04T12:45:13.251Z
 title: Yuki
-japanese-title: 阪本 由貴
+japanese_title: 阪本 由貴
 name_la: japanese
 role: Scriptwriter
 description: Scriptwriter

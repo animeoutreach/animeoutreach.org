@@ -3,7 +3,7 @@ layout: page
 blog: member
 date: 2017-11-04T12:45:13.251Z
 title: '@nanophate'
-japanese-title: なの
+japanese_title: なの
 name_la: english
 role: "PyonPyon Programmer \U0001F61C"
 description: "PyonPyon Programmer \U0001F61C"

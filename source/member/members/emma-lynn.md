@@ -3,7 +3,7 @@ layout: page
 blog: member
 date: 2017-11-04T12:45:13.251Z
 title: Emma Lynn
-japanese-title: エマ
+japanese_title: エマ
 name_la: english
 role: Story Writer
 description: Story Writer

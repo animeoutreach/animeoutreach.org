@@ -13,7 +13,11 @@ directory_index: false
       <div class="img center">
         <img style="height:200px" src="<%=article.data.thumbnail %>" />
       </div>
-      <h3><%= link_to article.title, article %></h3>
+      <%if article.data.name_la == 'english' %>
+        <h3><%= link_to article.title, article %></h3>
+      <% else %>
+        <h3><%= link_to article.data.japanese_title, article %></h3>
+      <% end %>
       <p><%= article.data.role %></p>
       <!--<%= article.data %>-->
     </div>
@@ -23,7 +27,11 @@ directory_index: false
       <div class="img center">
         <img style="height:200px" src="<%=article.data.thumbnail %>" />
       </div>
-      <h3><%= link_to article.title, article %></h3>
+      <%if article.data.name_la == 'english' %>
+        <h3><%= link_to article.title, article %></h3>
+      <% else %>
+        <h3><%= link_to article.data.japanese_title, article %></h3>
+      <% end %>
       <p><%= article.data.role %></p>
       <!--<%= article.data %>-->
     </div>
@@ -33,7 +41,11 @@ directory_index: false
       <div class="img center">
         <img style="height:200px" src="<%=article.data.thumbnail %>" />
       </div>
-      <h3><%= link_to article.title, article %></h3>
+      <%if article.data.name_la == 'english' %>
+        <h3><%= link_to article.title, article %></h3>
+      <% else %>
+        <h3><%= link_to article.data.japanese_title, article %></h3>
+      <% end %>
       <p><%= article.data.role %></p>
       <!--<%= article.data %>-->
     </div>
@@ -43,7 +55,11 @@ directory_index: false
       <div class="img center">
         <img style="height:200px" src="<%=article.data.thumbnail %>" />
       </div>
-      <h3><%= link_to article.title, article %></h3>
+      <%if article.data.name_la == 'english' %>
+        <h3><%= link_to article.title, article %></h3>
+      <% else %>
+        <h3><%= link_to article.data.japanese_title, article %></h3>
+      <% end %>
       <p><%= article.data.role %></p>
       <!--<%= article.data %>-->
     </div>
