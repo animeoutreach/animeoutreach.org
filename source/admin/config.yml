@@ -11,7 +11,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog_layout"}
-      - {label: "Blog Name", name: "blog", widget: "select",  options: ["blog"]}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "blog"}
+      - {label: "Blog Name", name: "blog", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -25,7 +26,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Blog Name", name: "blog", widget: "select",  options: ["page"]}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "page"}
+      - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
@@ -37,7 +39,8 @@ collections:
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Blog Name", name: "blog", widget: "select",  options: ["member"]}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "member"}
+      - {label: "Blog Name", name: "blog", widget: "hidden",  default: "member"}
       - {label: "Created Date", name: "date", widget: "datetime"}
       - {label: "Name", name: "title", widget: "string"}
       - {label: "Japanese Name", name: "japanese_title", widget: "string"}
