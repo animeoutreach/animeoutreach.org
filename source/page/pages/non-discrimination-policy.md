@@ -4,7 +4,7 @@ blog-mock: page
 blog: page
 title: Non Discrimination Policy
 date: 2017-11-09T16:40:27.679Z
-thumbnail: /static/images/uploads/_render__03___kafuu_chino_by_mizumon-d9enaof.png
+thumbnail: /static/images/uploads/13168154234_5f2d223c3a_o.jpg
 ---
 ### Administrative Policy
 
