@@ -1,18 +1,6 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-
-    <%= stylesheet_link_tag 'header', 'site', 'footer', 'index', 'introduction', 'visions' %>
-    <%= javascript_include_tag 'site', 'classie'%>
-  </head>
+  <%= partial 'partials/head_meta' %>
   <body>
 
     <div class="container" style="margin-top:20em;">

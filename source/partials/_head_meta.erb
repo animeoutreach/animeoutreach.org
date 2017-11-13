@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title><%= current_page.data.title || 'Middleman' %></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://dev.animeoutreach.org/static/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://dev.animeoutreach.org/static/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://dev.animeoutreach.org/static/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="http://dev.animeoutreach.org/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="http://dev.animeoutreach.org/static/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-config" content="http://dev.animeoutreach.org/static/images/favicons/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff">
+
+  <%= stylesheet_link_tag 'header', 'site', 'footer', 'index', 'introduction', 'visions' %>
+  <%= javascript_include_tag 'site', 'classie'%>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
