@@ -32,19 +32,6 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "pg"
-    label: "Page Sub"
-    folder: "source/page/pages/"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "page(この欄は変更しないでください)"}
-      - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "member"
     label: "Member"
     folder: "source/member/members"
