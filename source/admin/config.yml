@@ -11,13 +11,39 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog_layout"}
-      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "blog"}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "blog(この欄は変更しないでください)"}
       - {label: "Blog Name", name: "blog", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "page"
+    label: "Page"
+    folder: "source/page/pages/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "page(この欄は変更しないでください)"}
+      - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pg"
+    label: "Page Sub"
+    folder: "source/page/pages/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "page(この欄は変更しないでください)"}
+      - {label: "Blog Name", name: "blog", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "member"
     label: "Member"
@@ -26,7 +52,7 @@ collections:
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "member"}
+      - {label: "Blog Name", name: "blog-mock", widget: "string",  default: "member(この欄は変更しないでください)"}
       - {label: "Blog Name", name: "blog", widget: "hidden",  default: "member"}
       - {label: "Created Date", name: "date", widget: "datetime"}
       - {label: "Name", name: "title", widget: "string"}
