@@ -25,6 +25,12 @@ page '/*.txt', layout: false
 
 activate :directory_indexes
 
+activate :robots,
+  :rules => [
+    {:user_agent => '*', :allow => %w(/)}
+  ],
+  :sitemap => "https://animeoutreach.org/sitemap.xml"
+
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.name = "blog"
