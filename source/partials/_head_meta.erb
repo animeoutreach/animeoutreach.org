@@ -41,6 +41,16 @@
   <meta name="fb:admins" content="1722414251102103">
   <meta name="og:type" content="website">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109844369-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109844369-1');
+  </script>
+
   <%= stylesheet_link_tag 'header', 'site', 'footer', 'index', 'introduction', 'visions' %>
   <%= javascript_include_tag 'site', 'classie'%>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
