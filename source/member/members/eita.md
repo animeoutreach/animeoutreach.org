@@ -12,4 +12,4 @@ thumbnail: static/images/uploads/eita500x500.jpg
 ---
 Manager
 
-aaあ
+aaああああああああああ
