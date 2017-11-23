@@ -27,7 +27,7 @@ activate :directory_indexes
 
 activate :robots,
   :rules => [
-    {:user_agent => '*', :allow => %w(/)}
+    {:user_agent => '*', :Disallow => %w(/)}
   ],
   :sitemap => "https://animeoutreach.org/sitemap.xml"
 
