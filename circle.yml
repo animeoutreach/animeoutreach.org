@@ -21,7 +21,8 @@ test:
   override:
     - "true"
 
-# How you tell Circle to deploy to Firebase.
+# How you tell Circle to deploy to Firebase. The important thing to
+# note here is the FIREBASE_TOKEN env variable. See below.
 deployment:
   production:
     branch: public
