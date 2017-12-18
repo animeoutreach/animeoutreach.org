@@ -3,8 +3,8 @@ layout: page
 blog-mock: a
 blog: member
 date: 2017-11-04T12:45:13.251Z
-title: Kasuga
-japanese_title: 坂野 かずさ
+title: Kasuga Uesaka
+japanese_title: 上坂　かすが
 name_la: japanese
 role: Writer
 description: Writer
