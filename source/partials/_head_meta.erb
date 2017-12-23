@@ -4,7 +4,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Use the title from a page's frontmatter if it has one -->
-  <title><%= current_page.data.title || 'AnimeOutreach | アニメアウトリーチ' %></title>
+  <title><%= "#{current_page.data.title} | AnimeOutreach" || 'AnimeOutreach | アニメアウトリーチ' %></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
@@ -19,22 +19,34 @@
   <!-- COMMON TAGS -->
   <meta charset="utf-8">
   <!-- Search Engine -->
-  <meta name="description" content="「日本の若者にイエスの愛を知ってもらたい」クリスチャンの日常を描いたアニメを制作している超教派の非営利クリスチャン団体です。 | “We want Japanese young people to know the love of Jesus” AnimeOutreach is an interdenominational non-profit Christian organization whose making animation depicting the daily life of Christians.">
+  <meta name="description" content="">
   <meta name="image" content="https://animeoutreach.org/static/images/public/og_cover_image.jpg">
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="AnimeOutreach">
-  <meta itemprop="description" content="「日本の若者にイエスの愛を知ってもらたい」クリスチャンの日常を描いたアニメを制作している超教派の非営利クリスチャン団体です。 | “We want Japanese young people to know the love of Jesus” AnimeOutreach is an interdenominational non-profit Christian organization whose making animation depicting the daily life of Christians.">
+  <% unless current_page.data.meta_description_ja.nil? && current_page.data.meta_description_en.nil? %>
+    <meta itemprop="description" content="<%=current_page.data.meta_description_ja + current_page.data.meta_description_en %>">
+  <% else %>
+    <meta itemprop="description" content="アニメアウトリーチは、「日本の若者にイエスの愛を知ってもらいたい」クリスチャンの日常を描いたアニメを制作している超教派の非営利クリスチャン団体です。'We want Japanese young people to know the love of Jesus' AnimeOutreach is an interdenominational non-profit Christian organization whose making animation depicting the daily life of Christians.">
+  <% end %>
   <meta itemprop="image" content="https://animeoutreach.org/static/images/public/og_cover_image.jpg">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AnimeOutreach">
-  <meta name="twitter:description" content="Creating anime to communicate the love of Jesus anywhere and any time | アニメを作りながどこでもいつでもイエスの愛を伝えるように励ましたい">
+  <% unless current_page.data.meta_description_ja.nil? && current_page.data.meta_description_en.nil? %>
+    <meta name="twitter:description" content="<%=current_page.data.meta_description_ja + current_page.data.meta_description_en %>">
+  <% else %>
+    <meta name="twitter:description" content="アニメアウトリーチは、「日本の若者にイエスの愛を知ってもらいたい」クリスチャンの日常を描いたアニメを制作している超教派の非営利クリスチャン団体です。'We want Japanese young people to know the love of Jesus' AnimeOutreach is an interdenominational non-profit Christian organization whose making animation depicting the daily life of Christians.">
+  <% end %>
   <meta name="twitter:site" content="anime_outreach">
   <meta name="twitter:creator" content="anime_outreach">
   <meta name="twitter:image:src" content="https://animeoutreach.org/static/images/public/og_cover_image.jpg">
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta name="og:title" content="AnimeOutreach">
-  <meta name="og:description" content="Creating anime to communicate the love of Jesus anywhere and any time | アニメを作りながどこでもいつでもイエスの愛を伝えるように励ましたい">
+  <% unless current_page.data.meta_description_ja.nil? && current_page.data.meta_description_en.nil? %>
+    <meta name="og:description" content="<%=current_page.data.meta_description_ja + current_page.data.meta_description_en %>">
+  <% else %>
+    <meta name="og:description" content="アニメアウトリーチは、「日本の若者にイエスの愛を知ってもらいたい」クリスチャンの日常を描いたアニメを制作している超教派の非営利クリスチャン団体です。'We want Japanese young people to know the love of Jesus' AnimeOutreach is an interdenominational non-profit Christian organization whose making animation depicting the daily life of Christians.">
+  <% end %>
   <meta name="og:image" content="https://animeoutreach.org/static/images/public/og_cover_image.jpg">
   <meta name="og:url" content="https://animeoutreach.org">
   <meta name="og:site_name" content="AnimeOutreach">

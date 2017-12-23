@@ -2,7 +2,7 @@
 layout: page
 blog-mock: page
 blog: page
-title: privacy
+title: Privacy Policy
 date: 2017-11-06T11:43:16.578Z
 thumbnail: /static/images/uploads/jikken4.jpg
 ---

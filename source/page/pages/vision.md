@@ -1,7 +1,7 @@
 ---
 layout: page
 blog: page
-title: vision
+title: Vision
 date: 2017-11-04T12:45:13.251Z
 thumbnail: static/images/uploads/Screen Shot 2017-10-31 at 14.34.42.png
 ---
