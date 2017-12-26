@@ -3,7 +3,7 @@ layout: page
 blog-mock: ラルフ
 blog: member
 date: 2017-12-21T10:58:10.677Z
-title: 　Ralph Justiniano
+title: Ralph Justiniano
 japanese_title: ジャスティニアノ　ラルフ
 name_la: english
 role: ministry
