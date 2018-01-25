@@ -1,5 +1,6 @@
 ---
 layout: page
+blog-mock: yuki
 blog: member
 date: 2017-11-04T12:45:13.251Z
 title: Yuki
@@ -9,4 +10,4 @@ role: Scriptwriter
 description: Scriptwriter
 thumbnail: static/images/uploads/yuki500x500.jpg
 ---
-Scriptwriter
+作成中
