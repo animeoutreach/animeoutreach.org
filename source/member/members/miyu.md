@@ -6,11 +6,11 @@ date: 2017-11-04T12:45:13.251Z
 title: Miyu
 japanese_title: みゆ
 name_la: english
-role: Musician
-description: Musician
+role: advisor
+description: advisor
 thumbnail: static/images/uploads/miyu500x500.jpg
 ---
-Musician
+advisor
 
 東京で大学生をしているクリスチャンです。
 
