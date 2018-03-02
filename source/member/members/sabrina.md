@@ -24,7 +24,7 @@ I want to seek and be used by God more and more here in mainland Japan.
 
 Romans 12:1-2
 
-
+Favorite works: "The Lion, the Witch, and the Wardrobe", "Fantastic Mr. Fox", "The Rose of Versailles"
 
 育ちが沖縄で、現在は東京での上智大学に通っています。
 
@@ -37,3 +37,5 @@ Romans 12:1-2
 ここ本土日本で、私はもっともっと神様を探し求め彼に使われたいです。
 
 ローマ人への手紙１２章１−２節
+
+好きな作品：「ライオンと魔女」、「ファンタスティックMr. Fox」、「ベルサイユのばら」
