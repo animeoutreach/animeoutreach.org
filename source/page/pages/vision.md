@@ -1,5 +1,6 @@
 ---
 layout: page
+blog-mock: vision
 blog: page
 title: vision
 date: 2017-11-04T12:45:13.251Z
@@ -7,7 +8,7 @@ thumbnail: static/images/uploads/Screen Shot 2017-10-31 at 14.34.42.png
 ---
 # Vision
 
-The passion of our team at Anime Outreach is to follow Jesus- obeying what He commanded, and following the example that He set. He commanded, “Go into all the world and preach the Good News to everyone,” (Mk. 16:15 NLT) so we want to help everyone we can to hear the Good News of the love that Jesus has for them. In sharing this Good News himself, Jesus used “stories and illustrations to teach the people as much as they could understand. In fact, in his public ministry he never taught without using parables…” (Mk 4:33~34 NLT) Those parables were examples from the everyday life of the 1st century Middle East that helped people of that region and generation to understand deep spiritual truth. In following His example, we are using examples from the everyday life of 21st century Japan, illustrated through anime and characters who are regular, everyday Japanese people, to help Japanese understand deep spiritual truth and the love that Jesus has for them. These anime that we produce are tools for outreach that we want to make available to Christians all over Japan and the world to help them be more fruitful in sharing the love of Jesus with anyone, at any time, and in any place.
+The passion of our team at Anime Outreach is to follow Jesus; obeying what He commanded, and following the example that He set. He commanded, “Go into all the world and preach the Good News to everyone,” (Mk. 16:15 NLT) so we want to help everyone we can to hear the Good News of the love that Jesus has for them. In sharing this Good News Himself, Jesus used “stories and illustrations to teach the people as much as they could understand. In fact, in his public ministry He never taught without using parables…” (Mk 4:33~34 NLT) Those parables were examples from the everyday life in the 1st century Middle East that helped people of that region and generation to understand deep spiritual truth. Moreover, in following His example, we are using examples from the everyday life of 21st century Japan, illustrated through anime and characters who are regular, everyday Japanese people, to help the Japanese understand deep spiritual truth and the love that Jesus has for them. This anime that we produce are tools for outreach that we want to make available to Christians in Japan and in the world, to help them be more fruitful in sharing the love of Jesus with anyone, at any time, and in any place.
 
 # How To Support This Project
 
@@ -24,8 +25,6 @@ We are asking God for 3 areas of support needed to fulfill this Anime Outreach m
 ーーーそして、私たちは「アニメ」に注目しました。アニメを使うことで、主イエスの愛の真実はより深く日本人に伝えられれると確信しています。
 
 日本に、そして世界中に、イエスの愛が豊かに実っていくことを祈りつつ。
-
-
 
 # プロジェクトを支援する
 
